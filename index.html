@@ -7,17 +7,25 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="style.css" />
+		<script src="jquery.js"></script>
 		<script>
 		function navclick(x){
 			window.open(x);
 		}
+		</script>
+		<script>
+		$(document).ready(function(){
+		  $( '#hidecfoot' ).click(function() {
+			  $( '#cfoot' ).slideToggle();
+			});
+		});
 		</script>
 	</head>
 	<body dir="rtl">
 		<nav>
 			<button class="page">الصفحة الرئيسية</button>
 			<button class="page" onclick="navclick('who-are-us.html')">من نحن؟</button>
-			<button class="page" onclick="navclick('privacy-policy.html')">سياسة الخصوصية</button>
+			<button id="hidecfoot" class="page">منتجاتنا الأخرى</button>
 		</nav>
 		<div id="cfoot">
 				منتجات Favorite Learn الأخرى<br /><br />
