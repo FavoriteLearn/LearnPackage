@@ -66,7 +66,7 @@ nav{
 	right:0;
 	width:100%;
 	text-align:center;
-	margin-top:50%;
+	margin-top:55%;
 	font-size:30px;
 	color:#fff;
 	background:#000;
@@ -96,7 +96,7 @@ nav{
 		margin-top:0;
 	}
 	#cfoot{
-		margin-top:53%;
+		margin-top:60%;
 		font-size:20px;
 	}
 	.ad{
@@ -117,7 +117,7 @@ nav{
 		font-size:18px;
 	}
 	#cfoot{
-		margin-top:55%;
+		margin-top:80%;
 		font-size:16px;
 	}
 	.ad{
@@ -139,7 +139,7 @@ nav{
 		font-size:17px;
 	}
 	#cfoot{
-		margin-top:125%;
+		margin-top:150%;
 		font-size:15px;
 	}
 	.ad{
@@ -157,7 +157,7 @@ nav{
 		font-size:13px;
 	}
 	#cfoot{
-		margin-top:160%;
+		margin-top:170%;
 		font-size:12px;
 	}
 	.social{
@@ -178,7 +178,7 @@ nav{
 		font-size:11px;
 	}
 	#cfoot{
-		margin-top:140%;
+		margin-top:190%;
 		font-size:11px;
 	}
 	.social{
