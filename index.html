@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ar">
+	<head>
+		<title>Favorite Learn</title>
+		<meta name="description" content="الموقع الخاص بشركة Favorite Learn التعليمية" />
+		<meta name="keyword" content="favorite,learn,programming,technologies,tech,html,css" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="style.css" />
+		<script>
+		function navclick(x){
+			window.open(x);
+		}
+		</script>
+	</head>
+	<body dir="rtl">
+		<nav>
+			<button class="page">الصفحة الرئيسية</button>
+			<button class="page" onclick="navclick('who-are-us.html')">من نحن؟</button>
+			<button class="page" onclick="navclick('privacy-policy.html')">سياسة الخصوصية</button>
+		</nav>
+		<div id="cfoot">
+				منتجات Favorite Learn الأخرى<br /><br />
+				<button class="social" onclick="navclick('https://www.facebook.com/groups/favoritelearn')">
+					<img src="fb.png" class="ad" /><br />مجموعتنا على فيسبوك
+				</button>
+				<button class="social" onclick="navclick('https://www.youtube.com/channel/UCyRhzxYJAnz6WoFG_9fzjBg')">
+					<img src="yt.png" class="ad" /><br />قناتنا على يوتيوب
+				</button>
+				<button class="social" onclick="navclick('https://t.me/favoritelearn')">
+					<img src="tel.png" class="ad" /><br />قناتنا على تيليغرام
+				</button><br><br />
+			</div>
+		<div id="content">
+			<button class="course" onclick="navclick('html-course/index.html')">
+				Learn HTML<br />
+				تعلم لغة HTML عن طريق دورة مكونة من سبع دروس في أقل من ساعة
+			</button>
+			<button class="course" onclick="navclick('css-course/index.html')">
+				Learn CSS<br />
+				تعلم لغة CSS عن طريق دورة مكونة من سبع دروس في أقل من ساعة
+			</button>
+		</div>
+	</body>
+</html>
