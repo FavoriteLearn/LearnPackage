@@ -84,6 +84,7 @@ nav{
 .ad{
 	width:50px;
 }
+/* configure for devices */
 @media screen and (max-width: 768px) {
 	nav{
 		height:30px;
