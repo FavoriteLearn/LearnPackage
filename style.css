@@ -69,7 +69,6 @@ nav{
 	margin-top:30px;
 	width:33.3%;
 	text-align:center;
-	font-size:30px;
 	color:#fff;
 	background:#000;
 	border-radius:40px 40px 0 0;
@@ -101,7 +100,6 @@ nav{
 	}
 	#cfoot{
 		margin-top:25px;
-		font-size:18px;
 	}
 	.ad{
 		width:37px;
@@ -119,7 +117,6 @@ nav{
 	}
 	#cfoot{
 		margin-top:20px;
-		font-size:15px;
 	}
 	.ad{
 		width:30px;
@@ -141,7 +138,6 @@ nav{
 	}
 	#cfoot{
 		margin-top:19px;
-		font-size:14px;
 	}
 	.ad{
 		width:25px;
@@ -159,7 +155,6 @@ nav{
 	}
 	#cfoot{
 		margin-top:17px;
-		font-size:12px;
 	}
 	.social{
 		font-size:10px;
@@ -180,7 +175,6 @@ nav{
 	}
 	#cfoot{
 		margin-top:15px;
-		font-size:11px;
 	}
 	.social{
 		font-size:8px;
