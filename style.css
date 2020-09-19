@@ -25,6 +25,7 @@ nav{
 	border:none;
 	border-radius:0 0 40px 40px;
 	cursor:pointer;
+	overflow:hidden;
 }
 .page:hover{
 	background:#2f51b3;
@@ -71,7 +72,7 @@ nav{
 	text-align:center;
 	color:#fff;
 	background:#000;
-	border-radius:40px 40px 0 0;
+	border-radius:40px;
 	z-index:999999999999999999;
 }
 .social{
