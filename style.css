@@ -50,7 +50,6 @@ nav{
 }
 .course{
 	float:right;
-	margin-top:30px;
 	width:50%;
 	height:95%;
 	color:#fff;
@@ -81,6 +80,8 @@ nav{
 	background:transparent;
 	cursor:pointer;
 	color:#fff;
+	float:right;
+	padding:10px;
 }
 .ad{
 	width:50px;
@@ -95,6 +96,8 @@ nav{
 	}
 	#content{
 		top:0;
+		background-image:url('mob-bg.jpg');
+		background-size:700px 1000px;
 	}
 	.course{
 		font-size:25px;
@@ -132,7 +135,6 @@ nav{
 		font-size:14px;
 	}
 	#content{
-		background-image:url('mob-bg.jpg');
 		background-size:350px 500px;
 	}
 	.course{
