@@ -1,0 +1,56 @@
+div.content *{	
+	color:#fff;
+}
+.cshead{
+	width:100%;
+	height:10%;
+	margin-top:60px;
+	font-size:55px;
+	text-align:center;
+}
+.lesson{
+	background:#1c43af;
+	margin-right:70px;
+	margin-top:75px;
+	width:19.5%;
+	height:65px;
+	transition:width 0.5s ease-out;
+	-webkit-transition:width 0.5s ease-in-out;
+	-moz-transition:width 0.5s ease-in-out;
+	-o-transition:width 0.5s ease-in-out;
+	overflow:hidden;
+	border-radius:40px 40px 40px 40px;
+	padding-right:15px;
+}
+.lesson:hover{
+	width:80%;
+	left:0;
+}
+.lesson:active{
+	transform:rotate(1deg);
+}
+.shown{
+	width:300px;
+	float:right;
+	font-size:45px;
+	margin-right:15px;
+}
+.lesson-description{
+	float:right;
+	width:370px;
+	height:100%;
+	font-size:45px;
+	text-align:center;
+}
+.lefted{
+	float:left;
+	text-align:left;
+}
+.lesson.lefted{
+	border-radius:40px 40px 40px 40px;
+	margin-left:70px;
+	margin-top:5px;
+}
+.shown.lefted{
+	padding-left:17px;
+}

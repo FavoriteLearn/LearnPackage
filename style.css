@@ -1,79 +1,109 @@
+/* general */
+@font-face{
+	font-family:cocon;
+	src:url('cocon-next-arabic-light.otf');
+}
 body{
-	font-family:Tahoma;
+	margin:0;
 }
 a{
 	text-decoration:none;
 	color:#fff;
 }
-/* navigation */
+/* navigation bar */
 nav{
 	position:fixed;
 	right:0;
 	top:0;
 	width:100%;
-	height:40px;
+	height:9%;
 	z-index:9999999;
+	overflow:hidden;
 }
 .page{
+	font-family:cocon;
 	font-size:27px;
 	color:#fff;
 	padding-bottom:8px;
 	float:right;
 	width:33.3%;
-	text-align:center;
-	background:#1e40a2;
-	border:none;
+	height:100%;
 	border-radius:0 0 40px 40px;
+	text-align:center;
+	background:#254fe8;
+	border:none;
 	cursor:pointer;
 	overflow:hidden;
-	z-index:9999999999999;
+	z-index:999999999999999;
 }
 .page:hover{
-	background:#2f51b3;
+	background:#365ff9;
 }
 .page:active{
-	background:#57917f;
+	background:#5799ff;
+}
+.logo{
+	padding:5px;
+	width:65px;
+	height:50px;
+}
+.ftbtn{
+	width:15%;
+	height:6.5%;
+	transition:width 0.5s ease-in-out,height 0.5s ease-in-out,left 0.5s ease-in-out;
+	-webkit-transition:width 0.5s ease-in-out,height 0.5s ease-in-out,left 0.5s ease-in-out;
+	-o-transition:width 0.5s ease-in-out,height 0.5s ease-in-out,left 0.5s ease-in-out;
+	-moz-transition:width 0.5s ease-in-out,height 0.5s ease-in-out,left 0.5s ease-in-out;
+	border:none;
+	border-radius:40px 40px 0 0;
+	background:#254fe8;
+	font-family:cocon;
+	font-size:27px;
+	color:#fff;
+	padding-top:8px;
+	position:fixed;
+	bottom:0;
+	left:41%;
+	opacity:0.85;
+	text-align:center;
+	z-index:999999;
+}
+.ftbtn:hover{
+	width:100%;
+	height:45%;
+	left:0;
+}
+.ftbtn:hover .hd{
+	display:block;
+}
+.hd{
+	display:none;
 }
 /* page content */
-#content{
-	position:fixed;
-	right:0;
-	top:0;
-	background-image:url('bg.jpg');
-	background-size:90% 100%;
-	background-attachment:fixed;
-	background-position:center center;
-	background-repeat: no-repeat;
-	background-color:#000;
-	height:105%;
+.content{
+	background-image: -webkit-gradient(linear,85% 100%, 25% 100%,from(#0e103a),color-stop(0.8, #0a417a), to(#031566));
+	background-image: -moz-linear-gradient(to left,#0e103a,#0a417a,#031566);
+	background-image: -webkit-linear-gradient(to left,#0e103a,#0a417a,#031566);
+	background-image: -o-linear-gradient(to left,#0e103a,#0a417a,#031566);
+	background-color:#1c43af;
+	height:100%;
 	width:100%;
+	overflow:auto;
+	position:absolute;
+	font-family:cocon;
 }
-.course{
-	float:right;
-	width:50%;
-	height:95%;
-	color:#fff;
-	font-size:35px;
-	background:#000;
-	opacity:0.45;
-	text-align:center;
-	border:none;
-	cursor:pointer;
-}
-.course:hover{
-	opacity:0.8;
-}
-/* advertise */
+/* Our Products */
 #cfoot{
 	position:fixed;
 	left:0;
-	margin-top:30px;
+	top:0;
 	width:33.3%;
+	height:160px;
 	text-align:center;
 	color:#fff;
-	background:#000;
-	border-radius:7px;
-	z-index:9999;
+	background:#1c43af;
+	border-radius:0 0 40px 40px;
+	z-index:999999;
 }
 .social{
 	border:none;
@@ -81,109 +111,12 @@ nav{
 	cursor:pointer;
 	color:#fff;
 	float:right;
-	padding:10px;
+	margin-right:46px;
+	margin-top:55px;
 }
 .ad{
-	width:50px;
+	width:55px;
 }
-/* configure for devices */
-@media screen and (max-width: 768px) {
-	nav{
-		height:30px;
-	}
-	.page{
-		font-size:20px;
-	}
-	#content{
-		top:0;
-		background-image:url('mob-bg.jpg');
-		background-size:700px 1000px;
-	}
-	.course{
-		font-size:25px;
-		margin-top:0;
-	}
-	#cfoot{
-		margin-top:25px;
-	}
-	.ad{
-		width:37px;
-	}
-}
-@media screen and (max-width:560px) {
-	nav{
-		height:25px;
-	}
-	.page{
-		font-size:18px;
-	}
-	.course{
-		font-size:18px;
-	}
-	#cfoot{
-		margin-top:20px;
-	}
-	.ad{
-		width:30px;
-	}
-}
-@media screen and (max-width: 425px) {
-	nav{
-		height:24px;
-	}
-	.page{
-		font-size:14px;
-	}
-	#content{
-		background-size:350px 500px;
-	}
-	.course{
-		font-size:17px;
-	}
-	#cfoot{
-		margin-top:19px;
-	}
-	.ad{
-		width:25px;
-	}
-}
-@media screen and (max-width: 250px) {
-	nav{
-		height:20px;
-	}
-	.page{
-		font-size:12px;
-	}
-	.course{
-		font-size:13px;
-	}
-	#cfoot{
-		margin-top:17px;
-	}
-	.social{
-		font-size:10px;
-	}
-	.ad{
-		width:20px;
-	}
-}
-@media screen and (max-width: 215px) {
-	nav{
-		height:18px;
-	}
-	.page{
-		font-size:9px;
-	}
-	.course{
-		font-size:11px;
-	}
-	#cfoot{
-		margin-top:15px;
-	}
-	.social{
-		font-size:8px;
-	}
-	.ad{
-		width:17px;
-	}
+.ad:hover{
+	width:57px;
 }
