@@ -4,7 +4,7 @@
 	width:50%;
 	height:100%;
 	color:#fff;
-	font-size:35px;
+	font-size:50px;
 	font-family:cocon;
 	background:#000044;
 	opacity:0.3;
@@ -15,6 +15,7 @@
 .course:hover{
 	opacity:0.8;
 }
+/* center line */
 .bord{
 	position:fixed;
 	right:50%;
@@ -23,32 +24,8 @@
 	background:#254fe8;
 	z-index:99999;
 }
-/* configure fo devices */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 460px){
 	.course{
-		font-size:25px;
-		margin-top:0;
-	}
-	.bord{
-		width:3px;
-}
-@media screen and (max-width:560px) {
-	.course{
-		font-size:18px;
-	}
-}
-@media screen and (max-width: 425px) {
-	.course{
-		font-size:17px;
-	}
-}
-@media screen and (max-width: 250px) {
-	.course{
-		font-size:13px;
-	}
-}
-@media screen and (max-width: 215px) {
-	.course{
-		font-size:11px;
+		font-size:35px;
 	}
 }

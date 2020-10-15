@@ -16,7 +16,8 @@ nav{
 	right:0;
 	top:0;
 	width:100%;
-	height:9%;
+	height:70px;
+	max-height:65px;
 	z-index:9999999;
 	overflow:hidden;
 }
@@ -34,7 +35,6 @@ nav{
 	border:none;
 	cursor:pointer;
 	overflow:hidden;
-	z-index:999999999999999;
 }
 .page:hover{
 	background:#365ff9;
@@ -47,6 +47,7 @@ nav{
 	width:65px;
 	height:50px;
 }
+/* way to use */
 .ftbtn{
 	width:15%;
 	height:6.5%;
@@ -104,6 +105,7 @@ nav{
 	background:#1c43af;
 	border-radius:0 0 40px 40px;
 	z-index:999999;
+	overflow:hidden;
 }
 .social{
 	border:none;
@@ -119,4 +121,98 @@ nav{
 }
 .ad:hover{
 	width:57px;
+}
+@media screen and (max-width: 1080px){
+	/* navigation bar */
+	nav{
+		height: 9.5%;
+	}
+	/* way to use */
+	.ftbtn{
+		font-size:22px;
+		height:4%;
+	}
+	.ftbtn:hover{
+		height:30%;
+	}
+	/* Our Products */
+	.social{
+		margin-right:27px;
+	}
+	.ad{
+		width:53px;
+	}
+	.ad:hover{
+		width:55px;
+	}
+}
+@media screen and (max-width: 840px){
+	/* Our Products */
+	#cfoot{
+		height:140px;
+	}
+	.social{
+		margin-right:20px;
+	}
+	.ad{
+		width:40px;
+	}
+	.ad:hover{
+		width:41px;
+	}
+	/* way to use */
+	.ftbtn{
+		font-size:20px;
+		width:17%;
+		left:40.5%;
+		height:30px;
+	}
+	.ftbtn:hover{
+		height:45%;
+	}
+}
+@media screen and (max-width: 600px){
+	nav{
+		height:6%;
+	}
+	.page{
+		font-size: 20px;
+	}
+	.logo{
+		padding:3px;
+		height:98%;
+		width:30%;
+	}
+	/* way to use */
+	.ftbtn{
+		font-size:19px;
+		width:27%;
+		left:36%;
+	}
+	/* our products */
+	#cfoot{
+		height:180px;
+	}
+	.social{
+		margin-top:31px;
+		margin-right:38px;
+	}
+	.ad:hover{
+		width:40px;
+	}
+}
+@media screen and (max-width: 460px){
+	#cfoot{
+		height:265px;
+	}
+	.social{
+		margin-top:19px;
+		margin-right:60px;
+	}
+	.ad{
+		width:35px;
+	}
+	.ad:hover{
+		width:35px;
+	}
 }
