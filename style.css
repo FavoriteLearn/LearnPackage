@@ -74,18 +74,19 @@ nav{
 	height:45%;
 	left:0;
 }
-.ftbtn:hover .hd{
-	display:block;
-}
 .hd{
 	display:none;
 }
+.ftbtn:hover .hd{
+	display:block;
+}
 /* page content */
 .content{
-	background-image: -webkit-gradient(linear,85% 100%, 25% 100%,from(#0e103a),color-stop(0.8, #0a417a), to(#031566));
-	background-image: -moz-linear-gradient(to left,#0e103a,#0a417a,#031566);
-	background-image: -webkit-linear-gradient(to left,#0e103a,#0a417a,#031566);
-	background-image: -o-linear-gradient(to left,#0e103a,#0a417a,#031566);
+	background-image: -webkit-gradient(linear,85% 100%, 25% 100%,
+		from(#0e103a),color-stop(0.8, #0a417a), to(#031566));
+	background-image: -moz-linear-gradient(to left,#0e103a,#1b528b);
+	background-image: -o-linear-gradient(to left,#0e103a,#1b528b);
+	background-image: linear-gradient(to left,#0e103a,#1b528b);
 	background-color:#1c43af;
 	height:100%;
 	width:100%;
@@ -171,23 +172,31 @@ nav{
 		height:45%;
 	}
 }
+@media screen and (max-width: 730px){
+		/* our products */
+	#cfoot{
+		height:220px;
+	}
+	.social{
+		margin-top:40px;
+		margin-right:50px;
+	}
+	.ad:hover{
+		width:40px;
+	}
+}
 @media screen and (max-width: 600px){
+	/* navigation */
 	nav{
-		height:6%;
+		height:7%;
 	}
 	.page{
 		font-size: 20px;
 	}
 	.logo{
-		padding:3px;
-		height:98%;
+		height:100%;
+		padding-top:2px;
 		width:30%;
-	}
-	/* way to use */
-	.ftbtn{
-		font-size:19px;
-		width:27%;
-		left:36%;
 	}
 	/* our products */
 	#cfoot{
@@ -200,19 +209,52 @@ nav{
 	.ad:hover{
 		width:40px;
 	}
+	/* way to use */
+	.ftbtn{
+		font-size:19px;
+		width:27%;
+		left:36%;
+	}
 }
 @media screen and (max-width: 460px){
+	/* our products */
 	#cfoot{
 		height:265px;
 	}
 	.social{
 		margin-top:19px;
-		margin-right:60px;
+		margin-right:40%;
 	}
 	.ad{
 		width:35px;
 	}
 	.ad:hover{
 		width:35px;
+	}
+	/* way to use */
+	.ftbtn{
+		font-size:17px;
+		width:30%;
+		left:35%;
+	}
+}
+@media screen and (max-width: 360px){
+	/* navigation */
+	.page{
+		border-radius:0;
+	}
+	/* our products */
+	#cfoot{
+		height:265px;
+	}
+	.social{
+		margin-right:35%;
+	}
+	/* way to use */
+	.ftbtn{
+		font-size:15px;
+		width:100%;
+		left:0;
+		border-radius:25px 25px 0 0;
 	}
 }

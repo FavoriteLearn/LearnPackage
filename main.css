@@ -24,8 +24,25 @@
 	background:#254fe8;
 	z-index:99999;
 }
-@media screen and (max-width: 460px){
+@media screen and (max-width: 500px){
+	/* courses */
 	.course{
-		font-size:35px;
+		float:right;
+		width:100%;
+		height:50%;
+		font-size:30px;
+	}
+	/* center line */
+	.bord{
+		right:0;
+		top:49.6%;
+		width:100%;
+		height:3px;
+	}
+}
+@media screen and (max-width: 360px){
+	/* courses */
+	.course{
+		font-size:25px;
 	}
 }
