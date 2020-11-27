@@ -4,6 +4,37 @@ function navclick(x)
 }
 $(function()
 {
+	$( '#lesshow' ).click(function()
+	{
+		$( '#lesdes' ).toggle('slow');
+	});
+	$( '#lesshow2' ).click(function()
+	{
+		$( '#lesdes2' ).toggle('slow');
+	});
+	$( '#lesshow3' ).click(function()
+	{
+		$( '#lesdes3' ).toggle('slow');
+	});
+	$( '#lesshow4' ).click(function()
+	{
+		$( '#lesdes4' ).toggle('slow');
+	});
+	$( '#lesshow5' ).click(function()
+	{
+		$( '#lesdes5' ).toggle('slow');
+	});
+	$( '#lesshow6' ).click(function()
+	{
+		$( '#lesdes6' ).toggle('slow');
+	});
+	$( '#lesshow7' ).click(function()
+	{
+		$( '#lesdes7' ).toggle('slow');
+	});
+});
+$(function()
+{
 	$( '#hidecfoot' ).click(function() 
 	{
 		$( '#cfoot' ).slideToggle();
@@ -11,7 +42,32 @@ $(function()
 });
 $(function()
 {
+	$( '#cans' ).click(function() 
+	{
+		$( '#cfoot' ).slideToggle();
+	});
+});
+$(function()
+{
+	$( '#author1' ).click(function()
+	{
+		$( '#auth_descrip1' ).slideToggle()
+	});
+	$( '#author2' ).click(function()
+	{
+		$( '#auth_descrip2' ).slideToggle()
+	});
+	$( '#author3' ).click(function()
+	{
+		$( '#auth_descrip3' ).slideToggle()
+	});
+});
+$(function()
+{
 	$( '#hidecfoot' ).trigger('click');
+	$( '#author1' ).trigger('click');
+	$( '#author2' ).trigger('click');
+	$( '#author3' ).trigger('click');
 });
 $(function()
 {

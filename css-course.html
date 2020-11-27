@@ -14,12 +14,14 @@
 		<script src="script.js"></script>
 	</head>
 	<body dir="rtl">
+		<center><img src="logo.png" class="mob" /></center>
 		<nav>
 			<button class="page" onclick="navclick('who-are-us.html')">من نحن</button>
 			<button class="page" onclick="navclick('index.html')"><img src="logo white.png" class="logo" /></button>
 			<button id="hidecfoot" class="page">زورونا على</button>
 		</nav>
 		<div id="cfoot">
+			<div id="cans">&times</div>
 			<br />
 			<a class="social" href="https://www.facebook.com/groups/favoritelearn" target="_blank">
 				<img src="images/fb.png" class="ad" />
@@ -38,105 +40,64 @@
 		<div class="content">
 			<div class="cshead">دورة CSS</div>
 			<div class="lesson">
+				<button id="lesshow" class="shown">
+					الدرس الأول &raquo;
+				</button>
 				<a href="https://www.youtube.com/watch?v=997FAWf7XxY" target="_blank">
-					<div class="shown">
-						الدرس الأول
-					</div>
-					<div class="lesson-description">
-						مقدمة في CSS
-					</div>
-					<div class="lesson-description">
-						مدة الدرس: 5:49
+					<div id="lesdes" class="lesson-description">
+						مقدمة في CSS - مدة الدرس: 5:49 
 					</div>
 				</a>
 			</div>
-			<div class="lesson lefted">
+			<div class="lesson">
+				<button id="lesshow2" class="shown">
+					الدرس الثاني &raquo;
+				</button>
 				<a href="https://www.youtube.com/watch?v=danCe5lhYAk" target="_blank">
-					<div class="shown lefted">
-						الدرس الثاني
-					</div>
-					<div class="lesson-description lefted">
-						التخطيط للمشروع
-					</div>
-					<div class="lesson-description lefted">
-						مدة الدرس: 3:40
+					<div id="lesdes2" class="lesson-description">
+						التخطيط للمشروع - مدة الدرس: 3:40
 					</div>
 				</a>
 			</div>
-			<div class="lesson">
+			<div class="lesson">		
+				<button id="lesshow3" class="shown">
+					الدرس الثالث &raquo;
+				</button>
 				<a href="https://www.youtube.com/watch?v=cYVlWKTEdho" target="_blank">
-					<div class="shown">
-						الدرس الثالث
-					</div>
-					<div class="lesson-description">
-						تصميم الصفحة الرئيسية (header)
-					</div>
-					<div class="lesson-description">
-						مدة الدرس: 7:12
+					<div id="lesdes3" class="lesson-description">
+						تصميم الصفحة الرئيسية (header) - مدة الدرس: 7:12
 					</div>
 				</a>
 			</div>
-			<div class="lesson lefted">
+			<div class="lesson">
+				<button id="lesshow4" class="shown">
+					الدرس الرابع &raquo;
+				</button>
 				<a href="https://www.youtube.com/watch?v=Bxdwcd8z-Bs" target="_blank">
-					<div class="shown lefted">
-						الدرس الرابع
-					</div>
-					<div class="lesson-description lefted">
-						تصميم الصفحة الرئيسية (footer)
-					</div>
-					<div class="lesson-description lefted">
-						مدة الدرس: 8:03
+					<div id="lesdes4" class="lesson-description">
+						تصميم الصفحة الرئيسية (footer) - مدة الدرس: 8:03
 					</div>
 				</a>
 			</div>
 			<div class="lesson">
+				<button id="lesshow5" class="shown">
+					الدرس الخامس &raquo;
+				</button>
 				<a href="https://www.youtube.com/watch?v=U9KjyE4oDk0" target="_blank">
-					<div class="shown">
-						الدرس الخامس
-					</div>
-					<div class="lesson-description">
-						تصميم الصفحة الرئيسية (المحتوى)
-					</div>
-					<div class="lesson-description">
-						مدة الدرس: 8:54
-					</div>
-				</a>
-			</div>
-			<div class="lesson lefted">
-				<a href="https://www.youtube.com/watch?v=U9KjyE4oDk0" target="_blank">
-					<div class="shown lefted">
-						الدرس السادس
-					</div>
-					<div class="lesson-description lefted">
-						قريباً
-					</div>
-					<div class="lesson-description lefted">
-						----
+					<div id="lesdes5" class="lesson-description">
+						تصميم الصفحة الرئيسية (المحتوى) - مدة الدرس: 8:54
 					</div>
 				</a>
 			</div>
 			<div class="lesson">
-				<a href="https://www.youtube.com/watch?v=U9KjyE4oDk0" target="_blank">
-					<div class="shown">
-						الدرس  السابع
-					</div>
-					<div class="lesson-description">
-						قريباً
-					</div>
-					<div class="lesson-description">
-						----
-					</div>
-				</a>
+				<button id="lesshow6" class="shown">
+					الدرس السادس &raquo;
+				</button>
+				<div id="lesdes6" class="lesson-description">
+					قريباً
+				</div>
 			</div>
-		</div>
-		<div class="ftbtn">
-			طريقة الاستخدام
-			<div class="hd">
-				للوصول إلى جميع الدورات الموجودة اذهب إلى الصفحة الرئيسية<br />
-				اضغط على الدورة التي تريد البدء بها لتظهر لك جميع الدروس المتاحة<br />
-				اضغط على عنوان الدرس الذي تريد الدخول إليه ليظهر لك الدرس في قناتنا على اليوتيوب<br /><br />
-				نحن لا نسجل أي بيانات مستخدم لك الحرية في التنقل من دون أي طرق تتبع إعلانية أو غيرها ولا نستعمل ملفات تعريف الارتباط(الكوكيز)<br />
-			</div>
+			<img src="logo.png" class="bgin" />
 		</div>
 	</body>
 </html>

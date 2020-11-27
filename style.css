@@ -1,23 +1,25 @@
-/* general */
 @font-face{
 	font-family:cocon;
 	src:url('cocon-next-arabic-light.otf');
 }
 body{
 	margin:0;
+	padding:0;
+	background:#0e103a;
 }
 a{
 	text-decoration:none;
 	color:#fff;
 }
-/* navigation bar */
+.mob{display: none;}
 nav{
 	position:fixed;
 	right:0;
 	top:0;
 	width:100%;
-	height:70px;
+	height:15%;
 	max-height:65px;
+	min-height:45px;
 	z-index:9999999;
 	overflow:hidden;
 }
@@ -35,72 +37,36 @@ nav{
 	border:none;
 	cursor:pointer;
 	overflow:hidden;
+	transition:background 0.5s;
+	-o-transition:background 0.5s;
+	-webkit-transition:background 0.5s;
+	-moz-transition:background 0.5s;
 }
-.page:hover{
-	background:#365ff9;
-}
-.page:active{
-	background:#5799ff;
-}
+.page:hover{background:#365ff9;}
+.page:active{background:#5799ff;}
 .logo{
 	padding:5px;
-	width:65px;
-	height:50px;
+	height:95%;
 }
-/* way to use */
-.ftbtn{
-	width:15%;
-	height:6.5%;
-	transition:width 0.5s ease-in-out,height 0.5s ease-in-out,left 0.5s ease-in-out;
-	-webkit-transition:width 0.5s ease-in-out,height 0.5s ease-in-out,left 0.5s ease-in-out;
-	-o-transition:width 0.5s ease-in-out,height 0.5s ease-in-out,left 0.5s ease-in-out;
-	-moz-transition:width 0.5s ease-in-out,height 0.5s ease-in-out,left 0.5s ease-in-out;
-	border:none;
-	border-radius:40px 40px 0 0;
-	background:#254fe8;
-	font-family:cocon;
-	font-size:27px;
-	color:#fff;
-	padding-top:8px;
-	position:fixed;
-	bottom:0;
-	left:41%;
-	opacity:0.85;
-	text-align:center;
-	z-index:999999;
-}
-.ftbtn:hover{
-	width:100%;
-	height:45%;
-	left:0;
-}
-.hd{
-	display:none;
-}
-.ftbtn:hover .hd{
-	display:block;
-}
-/* page content */
 .content{
-	background-image: -webkit-gradient(linear,85% 100%, 25% 100%,
-		from(#0e103a),color-stop(0.8, #0a417a), to(#031566));
-	background-image: -moz-linear-gradient(to left,#0e103a,#1b528b);
-	background-image: -o-linear-gradient(to left,#0e103a,#1b528b);
-	background-image: linear-gradient(to left,#0e103a,#1b528b);
-	background-color:#1c43af;
 	height:100%;
+	min-height:100%;
 	width:100%;
-	overflow:auto;
 	position:absolute;
 	font-family:cocon;
+	background-image: -webkit-gradient(linear,85% 100%, 25% 100%,from(#0e103a),color-stop(0.8, #0a417a), to(#031566));
+	background-image: -moz-linear-gradient(to left,#0e103a,#1b528b);
+	background-image: -o-linear-gradient(to left,#0e103a,#1b528b);
+	background-image: -ms-linear-gradient(to left,#0e103a,#1b528b);
+	background-image: linear-gradient(to left,#0e103a,#1b528b);
+	background-color:#1e2166;
 }
-/* Our Products */
 #cfoot{
 	position:fixed;
 	left:0;
 	top:0;
 	width:33.3%;
-	height:160px;
+	height:29%;
 	text-align:center;
 	color:#fff;
 	background:#1c43af;
@@ -108,153 +74,127 @@ nav{
 	z-index:999999;
 	overflow:hidden;
 }
+#cans{
+	display:none;
+	font-size:45px;
+	padding-right: 15px;
+	float:right;
+	position:absolute;
+	cursor:pointer;
+}
 .social{
 	border:none;
 	background:transparent;
 	cursor:pointer;
 	color:#fff;
 	float:right;
-	margin-right:46px;
+	margin-right:10%;
 	margin-top:55px;
 }
 .ad{
 	width:55px;
+	transition:width 0.5s;
+	-o-transition:width 0.5s;
+	-webkit-transition:width 0.5s;
+	-moz-transition:width 0.5s;
 }
-.ad:hover{
-	width:57px;
+.ad:hover{width:58px;}
+@media screen and (max-width: 1220px){
+	#cfoot{height: 27%;}
+	.ad{width:48px;}
+	.ad:hover{width:50px;}
 }
 @media screen and (max-width: 1080px){
-	/* navigation bar */
-	nav{
-		height: 9.5%;
-	}
-	/* way to use */
-	.ftbtn{
-		font-size:22px;
-		height:4%;
-	}
-	.ftbtn:hover{
-		height:30%;
-	}
-	/* Our Products */
-	.social{
-		margin-right:27px;
-	}
-	.ad{
-		width:53px;
-	}
-	.ad:hover{
-		width:55px;
-	}
+	#cfoot{height: 26%;}
+	.ad{width:42px;}
+	.ad:hover{width:43px;}
 }
-@media screen and (max-width: 840px){
-	/* Our Products */
-	#cfoot{
-		height:140px;
-	}
-	.social{
-		margin-right:20px;
-	}
-	.ad{
-		width:40px;
-	}
-	.ad:hover{
-		width:41px;
-	}
-	/* way to use */
-	.ftbtn{
-		font-size:20px;
-		width:17%;
-		left:40.5%;
-		height:30px;
-	}
-	.ftbtn:hover{
-		height:45%;
-	}
+@media screen and (max-width: 930px){
+	#cfoot{height: 25%;}
+	.ad{width:38px;}
+	.ad:hover{width:39px;}
 }
-@media screen and (max-width: 730px){
-		/* our products */
-	#cfoot{
-		height:220px;
-	}
-	.social{
-		margin-top:40px;
-		margin-right:50px;
-	}
-	.ad:hover{
-		width:40px;
-	}
+@media screen and (max-width: 820px){
+	#cfoot{height: 24%;}
+	.ad{width:35px;}
+	.ad:hover{width:36px;}
 }
-@media screen and (max-width: 600px){
-	/* navigation */
-	nav{
-		height:7%;
-	}
+@media screen and (max-width: 710px){
+	#cfoot{min-height: 120px;}
+	.social{margin-right:6%;}
+}
+@media screen and (max-width: 585px){
+	.social{margin-right:3%;}
+	.ad{width:30px;}
+	.ad:hover{width:31px;}
+}
+@media screen and (max-width: 415px){
+	nav{height:8%;}
+	.content{height:auto;}
 	.page{
-		font-size: 20px;
+		font-size:23px;
+		border-radius:0 0 20px 20px;
 	}
-	.logo{
-		height:100%;
-		padding-top:2px;
-		width:30%;
-	}
-	/* our products */
 	#cfoot{
-		height:180px;
+		height:20%;
+		border-radius:0 0 20px 20px;
 	}
 	.social{
-		margin-top:31px;
-		margin-right:38px;
+		margin-right:2%;
+		margin-top:40px;
 	}
-	.ad:hover{
-		width:40px;
-	}
-	/* way to use */
-	.ftbtn{
-		font-size:19px;
-		width:27%;
-		left:36%;
-	}
+	.ad{width:27px;}
+	.ad:hover{width:28px;}
 }
-@media screen and (max-width: 460px){
-	/* our products */
-	#cfoot{
-		height:265px;
+@media screen and (max-width: 380px){
+	.mob{
+		height:200px;
+		padding-bottom: 5px;
+		display:block;
 	}
-	.social{
-		margin-top:19px;
-		margin-right:40%;
-	}
-	.ad{
-		width:35px;
-	}
-	.ad:hover{
-		width:35px;
-	}
-	/* way to use */
-	.ftbtn{
-		font-size:17px;
-		width:30%;
-		left:35%;
-	}
-}
-@media screen and (max-width: 360px){
-	/* navigation */
+	nav{position:static;}
+	.logo{width:60%;}
 	.page{
 		border-radius:0;
+		height:60px;
 	}
-	/* our products */
 	#cfoot{
-		height:265px;
+		top:25%;
+		width:99%;
+		height:45%;
+		border-radius:25px;
 	}
 	.social{
-		margin-right:35%;
+		margin-top:30px;
+		margin-right:10%;
 	}
-	/* way to use */
-	.ftbtn{
-		font-size:15px;
+	.ad{
+		height:50px;
+		width: auto;
+	}
+	.ad:hover{width:auto;}
+	#cans{display:block;}
+}
+@media screen and (max-width: 340px){
+	.social{margin-top:20px;}
+	.ad{height:45px;}
+	.logo{width:70%;}
+}
+@media screen and (max-width: 290px){
+	.mob{height:150px;}
+	.page{font-size:16px;}
+	.logo{width:80%;}
+}
+@media screen and (max-width: 290px){
+	.logo{
+		width:90%;
+		padding-right:0;
+		padding-top:3px;
+	}
+}
+@media screen and (max-width: 190px){
+	.logo{
+		padding:0;
 		width:100%;
-		left:0;
-		border-radius:25px 25px 0 0;
 	}
 }
