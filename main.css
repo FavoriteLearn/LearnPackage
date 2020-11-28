@@ -57,7 +57,7 @@
 	.cologo{width:70px;}
 	.course:hover .cologo{width:70px;}
 }
-@media screen and (max-width: 380px){
+@media screen and (max-width: 415px){
 	.bord{display:none;}
 	.course{
 		height:50%;
