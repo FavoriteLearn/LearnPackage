@@ -14,6 +14,7 @@
 .cologo{
 	width:200px;
 	height:auto;
+	margin-top:17%;
 	transition:width 0.5s,height 0.5s;
 }
 .codes{
@@ -31,18 +32,30 @@
 	z-index:99999;
 }
 @media screen and (max-width: 980px){
-	.cologo{width:160px;}
-	.course:hover .cologo{width:135px;}
+	.cologo{width:145px;}
+	.course:hover .cologo{width:115px;}
 	.course{
 		overflow-y: auto;
 		min-height: 350px;
 	}
 }
+@media screen and (max-width: 640px){
+	.cologo{width:110px;}
+	.course:hover .cologo{width:90px;}
+	.course:hover .codes{font-size:25px}
+}
 @media screen and (max-width: 580px){
-	.cologo{width:100px;}
+	.cologo{
+		width:100px;
+		margin-top:0;
+	}
 	.course:hover .cologo{width:100px;}
 	.codes{font-size:15px;}
-	.course:hover .codes{font-size:17px;}
+	.course:hover .codes{font-size:15px;}
+}
+@media screen and (max-width: 460px){
+	.cologo{width:70px;}
+	.course:hover .cologo{width:70px;}
 }
 @media screen and (max-width: 380px){
 	.bord{display:none;}
