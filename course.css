@@ -142,9 +142,11 @@
 	.shown:active{font-size:16px;}
 	.lesson-description{font-size:14px;}
 }
+@media screen and (max-width:415px){
+	.bgin{display:none;}
+}
 @media screen and (max-width:380px){
 	.cshead{margin-top:10px;}
-	.bgin{display:none;}
 	.lesson{margin-top:80px;}
 	.shown{
 		font-size:18px;
