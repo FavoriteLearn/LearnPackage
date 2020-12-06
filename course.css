@@ -63,8 +63,16 @@
 	width:40%;
 	z-index:1;
 }
+.ret{
+	position:fixed;
+	top:30px;
+	right:20px;
+	font-size:20px;
+	width:250px;
+}
 @media screen and (max-width:1250px){
 	.cshead{font-size:47px;}
+	.ret{font-size:20px;}
 	.lesson{
 		margin-right:50px;
 		margin-top:40px;
@@ -75,6 +83,7 @@
 }
 @media screen and (max-width:1020px){
 	.cshead{font-size:42px;}
+	.ret{font-size:20px;}
 	.lesson{
 		margin-right:40px;
 		margin-top:33px;
@@ -88,6 +97,7 @@
 }
 @media screen and (max-width:880px){
 	.cshead{font-size:37px;}
+	.ret{font-size:19px;}
 	.lesson{
 		margin-right:35px;
 		margin-top:29px;
@@ -101,6 +111,12 @@
 }
 @media screen and (max-width:710px){
 	.cshead{font-size:32px;}
+	.ret{
+		top:15px;
+		right:5px;
+		font-size:17px;
+		width:150px;
+	}
 	.lesson{
 		margin-right:30px;
 		margin-top:24px;
@@ -133,6 +149,12 @@
 	.lesson{height:60px;}
 	.shown{height:105%;}
 }
+@media screen and (max-width:440px){
+	.ret{
+		font-size:14px;
+		width:120px;
+	}
+}
 @media screen and (max-width:420px){
 	.lesson{width:90%;}
 	.shown{
@@ -144,6 +166,11 @@
 }
 @media screen and (max-width:415px){
 	.bgin{display:none;}
+	.ret{
+		position:static;
+		padding:15px;
+		text-align:center;
+	}
 }
 @media screen and (max-width:380px){
 	.cshead{margin-top:10px;}

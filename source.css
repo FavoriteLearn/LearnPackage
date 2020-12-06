@@ -1,0 +1,56 @@
+.sc{
+	margin-top:100px;
+	font-size:40px;
+	color:#fff;
+	background:#254fbb;
+	border-radius:40px;
+	width:90%;
+	margin-right:5%;
+	overflow:hidden;
+	padding:10px;
+	border-collapse:collapse;
+}
+.sc tr{border-top:1px solid #000;}
+.sc th{
+	background:#234d84;
+	padding:15px;
+	width:100%;
+}
+.sc td{float:right;}
+.tag{
+	width:24%;
+	direction:ltr;
+	text-align:right;
+}
+.tagd{
+	width:35%;
+	font-size:22px;
+	margin-right:4%;
+}
+.tagp{
+	width:20%;
+	margin-right:6%;
+	font-size:22px;
+	direction:ltr;
+	text-align:right;
+}
+.tagl{
+	width:7%;
+	text-align:center;
+}
+.tagdo{
+	width:38%;
+	font-size:22px;
+}
+.tagpo{
+	width:21%;
+	margin-right:12%;
+	font-size:22px;
+	direction:ltr;
+	text-align:right;
+}
+.attent{
+	width:100%;
+	font-size:30px;
+	text-align:center;
+}
