@@ -22,6 +22,18 @@
 	direction:ltr;
 	text-align:right;
 }
+.tagdh{
+	width:35%;
+	font-size:40px;
+	margin-right:4%;
+}
+.tagph{
+	width:20%;
+	margin-right:6%;
+	font-size:40px;
+	direction:ltr;
+	text-align:right;
+}
 .tagd{
 	width:35%;
 	font-size:22px;
@@ -53,4 +65,114 @@
 	width:100%;
 	font-size:30px;
 	text-align:center;
+}
+@media screen and (max-width:1220px){
+	.tag{font-size:38px;}
+	.tagdh{font-size:38px;}
+	.tagph{font-size:38px;}
+	.tagl{font-size:38px;}
+	.tagd{font-size:21px;}
+	.tagp{font-size:21px;}
+	.tagdo{font-size:21px;}
+	.tagpo{font-size:21px;}
+	.attent{font-size:29px;}
+}
+@media screen and (max-width:1000px){
+	.tag{font-size:35px;}
+	.tagdh{font-size:35px;}
+	.tagph{font-size:35px;}
+	.tagl{font-size:35px;}
+	.tagd{font-size:19px;}
+	.tagp{font-size:19px;}
+	.tagdo{font-size:19px;}
+	.tagpo{font-size:19px;}
+	.attent{font-size:26px;}
+}
+@media screen and (max-width:870px){
+	.tag{font-size:31px;}
+	.tagdh{font-size:31px;}
+	.tagph{font-size:31px;}
+	.tagl{font-size:31px;}
+	.tagd{font-size:17px;}
+	.tagp{font-size:17px;}
+	.tagdo{font-size:17px;}
+	.tagpo{font-size:17px;}
+	.attent{font-size:22px;}
+}
+@media screen and (max-width:780px){
+	.sc{
+		width:97%;
+		margin-right:1.5%;
+	}
+	.tag{font-size:27px;}
+	.tagdh{font-size:27px;}
+	.tagph{font-size:27px;}
+	.tagl{font-size:27px;}
+	.tagd{font-size:15px;}
+	.tagp{font-size:15px;}
+	.tagdo{font-size:15px;}
+	.tagpo{font-size:15px;}
+	.attent{font-size:18px;}
+}
+@media screen and (max-width:635px){
+	.sc{
+		width:100%;
+		margin-right:0;
+	}
+	.sc th{font-size:30px;}
+	.tag{font-size:23px;}
+	.tagdh{font-size:23px;}
+	.tagph{font-size:23px;}
+	.tagl{font-size:23px;}
+	.tagd{font-size:13px;}
+	.tagp{font-size:13px;}
+	.tagdo{font-size:13px;}
+	.tagpo{font-size:13px;}
+	.attent{font-size:14px;}
+}
+@media screen and (max-width:535px){
+	.sc th{font-size:27px;}
+	.tag{font-size:19px;}
+	.tagdh{font-size:19px;}
+	.tagph{font-size:19px;}
+	.tagl{font-size:19px;}
+	.tagd{font-size:11px;}
+	.tagp{font-size:11px;}
+	.tagdo{font-size:11px;}
+	.tagpo{font-size:11px;}
+}
+@media screen and (max-width:450px){
+	.sc th{font-size:25px;}
+	.tag{font-size:16px;}
+	.tagdh{font-size:16px;}
+	.tagph{font-size:16px;}
+	.tagl{font-size:16px;}
+}
+@media screen and (max-width:415px){
+	.sc{margin-top:20px;}
+}
+@media screen and (max-width:390px){
+	.sc th{font-size:23px;}
+	.tag{font-size:13px;}
+	.tagdh{font-size:13px;}
+	.tagph{font-size:13px;}
+	.tagl{font-size:13px;}
+}
+@media screen and (max-width:325px){
+	.sc th{font-size:18px;}
+	.tag{font-size:12px;}
+	.tagdh{
+		font-size:12px;
+		margin-right:1.5%;
+	}
+	.tagd{margin-right:1.5%;}
+	.tagph{font-size:12px;}
+	.tagl{font-size:12px;}
+}
+@media screen and (max-width:240px){
+	.tagdh{margin-right:0;}
+	.tagd{margin-right:0;}
+	.tagdo{width:36%;}
+	.tagpo{margin-right:16%;}
+	.attent{font-size:11px;}
 }
