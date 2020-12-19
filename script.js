@@ -85,11 +85,11 @@ $(document).ready(function()
 	setTimeout(hit,20000); 
 });
 function searchTags() { 
-	let input = document.getElementById('searchbar').value 
+	let input = document.getElementById('searchbar').value;
 	input=input.toLowerCase(); 
 	let x = document.getElementsByClassName('searched'); 
 	for (i = 0; i < x.length; i++) { 
-		if (!x[i].innerHTML.toLowerCase().includes(input)) { 
+		if (!x[i].innerText.toLowerCase().includes("<"+input+">")) { 
 			x[i].style.display="none"; 
 		} 
 		else { 
