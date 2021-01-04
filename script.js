@@ -32,6 +32,14 @@ $(function()
 	{
 		$( '#lesdes7' ).toggle('slow');
 	});
+	$( '#lesshow8' ).click(function()
+	{
+		$( '#lesdes8' ).toggle('slow');
+	});
+	$( '#lesshow9' ).click(function()
+	{
+		$( '#lesdes9' ).toggle('slow');
+	});
 });
 $(function()
 {
